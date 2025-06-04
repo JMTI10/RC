@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #444, #222);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo-icon {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links .active a {
+  color: #FFD700;
+}
+
+.nav-links .disabled a {
+  color: #888;
+  pointer-events: none;
+  cursor: default;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+.item {
+  background: #ccc;
+  height: 150px;
+}
+
+.item.large {
+  grid-row: span 2;
+  height: 100%;
+}
+
+.item.wide {
+  height: 150px;
+}
+
+.item.small {
+  height: 100px;
+}
+
+/* Add responsiveness if needed */
