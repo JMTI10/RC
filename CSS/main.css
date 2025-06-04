@@ -26,11 +26,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #444, #222);
+  background: var(--hdr-gradient);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
 }
+
 
 .logo {
   font-weight: bold;
@@ -95,6 +96,15 @@ img {
 }
 
 /* Add responsiveness if needed */
+<<<<<<< HEAD
+=======
+:root {
+  --hdr-gradient: linear-gradient(
+    0deg in oklab,
+    oklch(100% 0 353) -60% -60%, oklch(0% 0 325) 50%, oklch(89% 0.00 228) 151% 151%
+  );
+  --sdr-gradient: linear-gradient(0deg, #fff -60% -60%, #ffffff 50%, #dbdbdb 151% 151%);
+>>>>>>> ebcaf0f7387bd20e3f1d5fd21516166663339f15
 
 
 .footer{
