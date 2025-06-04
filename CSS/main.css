@@ -78,3 +78,12 @@ body {
 }
 
 /* Add responsiveness if needed */
+:root {
+  --hdr-gradient: linear-gradient(
+    0deg in oklab,
+    oklch(100% 0 353) -60% -60%, oklch(0% 0 325) 50%, oklch(89% 0.00 228) 151% 151%
+  );
+  --sdr-gradient: linear-gradient(0deg, #fff -60% -60%, #000 50%, #dbdbdb 151% 151%);
+
+  background: var(--hdr-gradient);
+}
