@@ -85,6 +85,13 @@ img {
   padding: 2rem;
 }
 
+.borrow-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
 .item {
   background: #ccc;
   height: 150px;
@@ -101,6 +108,38 @@ img {
 
 .item.small {
   height: 100px;
+}
+
+.item.borrow {
+  background: #f0f0f0;
+  color: #333;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.pt_Quantity {
+  display: inline-block;
+  margin: 0 0 10px;
+  position: relative;
+  & input {
+    color: #443017;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #b7b7b7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    min-width: 45px;
+    height: 30px;
+    float: left;
+    display: block;
+    padding: 0 15px 0 2px;
+    margin: 0;
+    text-align: center;
+    width: 70px;
+    &:focus {
+      outline: 0;
+    }
+  }
 }
 
 .project-title {
@@ -125,4 +164,8 @@ img {
   .content-grid {
     grid-template-columns: 1fr;
   }
+  .item.large {
+  grid-row: span 2;
+  height: 150px;
+}
 }
